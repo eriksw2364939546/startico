@@ -1,0 +1,105 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mistakes{
+    margin-bottom: 100px;
+}
+
+.header__btns{
+    margin-left: auto;
+}
+
+.mail{
+    text-decoration: solid;
+    transition: all 0.2s;
+}
+
+.mail:hover{
+    font-size: 17px;
+    color: yellow;
+
+}
+
+.mistakes h1{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgba(73, 97, 110, 1);
+}
+.mistakes img{
+    width: 50%;
+}
+
+.mistakes p{
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    color: rgba(73, 97, 110, 1);
+}
+
+.mistakes p:nth-of-type(2){
+margin-bottom: 30px;
+}
+.mistakes ol{
+    padding-left: 25px;
+
+}
+.mistakes li{
+    font-size: 21px;
+    color: rgba(73, 97, 110, 1);
+}
+
+.mistakes .row{
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+}
+
+footer{
+    margin-top: auto;
+}
+
+
+@media all and (max-width: 800px){
+    .mistakes img{
+        width: 70%;
+    }
+
+    .mistakes{
+        margin-bottom: 0px;
+    }
+
+}
+
+@media all and (max-width: 600px){
+    .nav__blogs{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 12px;
+    
+    }
+    .mistakes img{
+        width: 100%;
+    }
+
+}
+
+
+@media all and (max-width: 340px){
+
+
+    .footer__soc-items{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .mail{
+            overflow-wrap: break-word;
+    }
+
+}

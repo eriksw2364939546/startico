@@ -1,0 +1,97 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header__btns{
+    margin-left: auto;
+}
+.key-strategies{
+    margin-bottom: 100px;
+}
+
+.mail{
+    text-decoration: solid;
+    transition: all 0.2s;
+}
+
+.mail:hover{
+    font-size: 17px;
+    color: yellow;
+
+}
+
+.key-strategies h1{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgba(73, 97, 110, 1);
+}
+.key-strategies img{
+    width: 50%;
+}
+
+.key-strategies p{
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    color: rgba(73, 97, 110, 1);
+    margin-bottom: 120px;
+}
+
+
+
+.key-strategies .row{
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+}
+
+footer{
+    margin-top: auto;
+}
+
+@media all and (max-width: 800px){
+    .key-strategies img{
+        width: 70%;
+    }
+
+    .key-strategies{
+        margin-bottom: 0px;
+    }
+
+    .key-strategies p{
+        margin-bottom: 40px;
+    }
+
+}
+
+@media all and (max-width: 600px){
+    .nav__blogs{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap: 12px;
+    
+    }
+    .key-strategies img{
+        width: 100%;
+    }
+
+}
+
+
+@media all and (max-width: 340px){
+
+
+    .footer__soc-items{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .mail{
+            overflow-wrap: break-word;
+    }
+
+}

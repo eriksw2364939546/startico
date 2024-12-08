@@ -1,0 +1,171 @@
+.news{
+    background: linear-gradient(to top, rgba(22, 46, 60, 1) 50%, white 50%);
+    margin: 128px 0 0 0;
+}
+
+.news__card{
+    background: rgba(221, 240, 167, 1);
+    text-align: center;
+    border-radius: 48px;
+    padding: 95px 0 93px 0;
+    position: relative;
+}
+
+.news__card img{
+position: absolute;
+top: 0;
+right: 64px;
+}
+
+.news__card h2{
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgba(22, 46, 60, 1);
+    margin-bottom: 27px;
+    line-height: 48px;
+}
+
+.news__descr{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(22, 46, 60, 1);
+    line-height: 27px;
+    margin-bottom: 30px;
+}
+
+.news form input, button{
+    height: 52px;
+    border-radius: 24px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    border: none;
+}
+
+.news form input{
+    padding-left: 42px;
+    color: rgba(22, 46, 60, 1);
+    font-weight: 700;
+    width: 368px;
+    background: rgba(255, 255, 255, 1);
+
+}
+.news form button{
+background: rgba(22, 46, 60, 1);
+color: rgba(255, 255, 255, 1);
+font-weight: 700;
+width: 128px;
+cursor: pointer;
+}
+.news form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 19px;
+}
+.news__card p:nth-of-type(2){
+    font-family: "Space Grotesk", sans-serif;
+     font-weight: 400;
+     font-size: 11px;
+     color: rgba(22, 46, 60, 1);
+     line-height: 18px;
+}
+
+
+
+@media all and (max-width: 780px){
+    .news{
+        background: linear-gradient(to top, rgba(22, 46, 60, 1) 50%, white 50%);
+        margin: 80px 0 0 0;
+    }
+    .news__card{
+        background: rgba(221, 240, 167, 1);
+        text-align: center;
+        border-radius: 25px;
+        padding: 30px 10px 30px 10px;
+        position: relative;
+    }
+
+    .news__card h2{
+        font-family: "Fraunces", serif;
+        font-weight: 400;
+        font-size: 40px;
+        color: rgba(22, 46, 60, 1);
+        margin-bottom: 27px;
+        line-height: 48px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .news__card img{
+        position: absolute;
+        top: 0;
+        right: 64px;
+        z-index: 0;
+        opacity: 0.5;
+        }
+
+        .news__card br{
+            display: none;
+        }
+}
+
+@media all and (max-width: 580px){
+    .news__card h2{
+        font-family: "Fraunces", serif;
+        font-weight: 400;
+        font-size: 30px;
+        color: rgba(22, 46, 60, 1);
+        margin-bottom: 27px;
+        line-height: 48px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .news__descr{
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(22, 46, 60, 1);
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+
+    .news form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 19px;
+    }
+    .news form button{
+        background: rgba(22, 46, 60, 1);
+        color: rgba(255, 255, 255, 1);
+        font-weight: 700;
+        width: 100%;
+        cursor: pointer;
+        }
+
+        .news form input{
+            padding-left: 42px;
+            color: rgba(22, 46, 60, 1);
+            font-weight: 700;
+            width: 100%;
+            background: rgba(255, 255, 255, 1);
+        
+        }
+}
+
+
+@media all and (max-width: 400px){
+    .news__card{
+        background: rgba(221, 240, 167, 1);
+        text-align: center;
+        border-radius: 48px;
+        padding: 30px 10px 30px 10px;
+        position: relative;
+    }
+}

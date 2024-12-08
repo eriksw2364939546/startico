@@ -1,0 +1,258 @@
+.comments{
+    padding: 127px 0 127px 0;
+    background: rgba(22, 46, 60, 1);
+    position: relative;
+}
+.comments__pattern-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.comments__pattern{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 243.48px;
+    height: 267.37px;
+}
+
+.comments .container{
+    text-align: center;
+}
+.comments h3{
+    font-size: 48px;
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    line-height: 57.6px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 32px;
+}
+
+.comments__header-text{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400px;
+    font-size: 17px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 90px;
+}
+
+.comments__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.comment__card{
+    width: 624px;
+    padding: 30px 30px;
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 32px;
+    position: relative;
+}
+.comment__card-content{
+    text-align: start;
+}
+
+.comment__card-stars{
+    margin-bottom: 10px;
+}
+
+.comments .row{
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.comment__card p{
+    font-family: "Space Grotesk", sans-serif;
+    height: 108px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(73, 97, 110, 1);
+    margin-bottom: 10px;
+}
+
+.comment__card-user{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+
+.comment__card-user img{
+ width: 48px;
+ height: 48px;
+}
+.comment__user-info h4{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(22, 46, 60, 1);
+}
+
+.comment__user-info p{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(73, 97, 110, 1);
+    margin-bottom: 0;
+    height: auto;
+
+} 
+
+@media all and (max-width: 1310px){
+    .comment__card{
+        width: 550px;
+        padding: 30px 30px;
+        background: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 32px;
+        position: relative;
+    }
+
+    .comments .row{
+        justify-content: center;
+        gap: 32px;
+    }
+
+
+}
+
+@media all and (max-width: 1160px){
+    .comment__card{
+        width: 500px;
+        padding: 30px 30px;
+        background: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 32px;
+        position: relative;
+    }
+
+    .comments .row{
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media all and (max-width: 1050px){
+
+    #comments{
+        margin: 60px 0;
+    }
+    .comments{
+        padding: 40px 0 40px 0;
+        background: rgba(22, 46, 60, 1);
+        position: relative;
+    }
+    .comments h3{
+        z-index: 1;
+        position: relative;
+    }
+
+    .comments__pattern-top{
+
+        z-index: 0;
+        opacity: 0.5;
+    }
+
+    .comment__card{
+        width: 650px;
+        padding: 30px 30px;
+        background: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 32px;
+        position: relative;
+    }
+
+    .comments .row{
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .comments__header-text{
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400px;
+        font-size: 17px;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 30px;
+    }
+
+    .comments__pattern-top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 150px;
+        height: 70px;
+    }
+
+}
+
+
+@media all and (max-width: 700px){
+    .comment__card{
+        width: 100%;
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 32px;
+        position: relative;
+    }
+    .comment__card br{
+        display: none;
+    }
+}
+
+@media all and (max-width: 465px){
+
+    .comment__card-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .comment__card > .comment__card-content > p:first-of-type{
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba(73, 97, 110, 1);
+        margin-bottom: 10px;
+
+    }
+
+    .comment__card-user {
+        display: flex;
+        align-items: start;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .comment__card{
+        width: 100%;
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 1);
+        border: none;
+        border-radius: 32px;
+        position: relative;
+    }
+    .comment__card p {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: rgba(73, 97, 110, 1);
+        margin-bottom: 10px;
+    }
+    
+
+    .hide-on-small {
+        display: none;
+    }
+
+}
+
+
+

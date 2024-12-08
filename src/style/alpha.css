@@ -1,0 +1,185 @@
+.alpha{
+    position: relative;
+    background:rgba(22, 46, 60, 1);
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 96px;
+    padding-bottom: 104px;
+    margin: 0;
+    
+}
+
+.alpha__pattern-left{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 170px;
+    height: 270px;
+}
+.alpha__pattern-right{
+    position: absolute;
+    bottom: 133px;
+    right: 0;
+    width: 170px;
+    height: 260px;
+}
+
+.alpha__pattern-bottom{
+    position: absolute;
+    bottom: -115px;
+    left: 0;
+    width: 243px;
+    height: 230px;
+    z-index: 1;
+}
+
+.alpha .container{
+    width: 50%;
+}
+
+.alpha h1{
+    font-size: 56px;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.alpha p{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+
+.alpha__content-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+    padding-top: 16px;
+}
+
+.alpha__content-btns button:nth-of-type(1){
+    width: 139px;
+    height: 52px;
+    border-radius: 64px;
+    border: none;
+    background: rgba(221, 240, 167, 1);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(22, 46, 60, 1);
+    font-family: "Space Grotesk", sans-serif;
+    cursor: pointer;
+}
+
+.alpha__content-btns button:nth-of-type(2){
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13.7px;
+    
+
+}
+
+.content-btn__try img{
+    width: 5.86px;
+    height: 10.36px;
+
+}
+.alpha__content .row{
+    justify-content: center;
+    gap: 32px;
+    padding: 32px 67px;
+}
+
+.alpha__content .row img{
+    width: 132px;
+}
+
+@media all and (max-width: 800px){
+
+    .alpha__pattern-left{
+        position: absolute;
+        left: -20px;
+        top: 100px;
+        width: 100px;
+        height: 170px;
+        z-index: 0;
+        display: none;
+    }
+    .alpha__pattern-right{
+        position: absolute;
+        bottom: 150px;
+        right: -20px;
+        width: 100px;
+        height: 160px;
+        z-index: 0;
+    }
+    
+    .alpha__pattern-bottom{
+display: none;
+    }
+
+    .alpha__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .alpha .container{
+        width: 100%;
+    }
+
+
+    .alpha{
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+
+}
+
+@media all and (max-width: 700px){
+    .alpha__content .row{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding: 32px 0px;
+    }
+
+}
+
+@media all and (max-width: 600px){
+    .alpha__pattern-left{
+    display: none;
+    }
+
+}
+
+@media all and (max-width: 450px){
+    .alpha__pattern-right{
+    display: none;
+    }
+
+    .alpha h1{
+        font-size: 30px;
+    }
+
+}
+

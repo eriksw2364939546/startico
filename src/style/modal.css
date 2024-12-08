@@ -1,0 +1,234 @@
+.modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.451);
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	opacity: -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.4s;
+}
+
+.modal-active {
+	opacity: 3;
+	z-index: 499;
+}
+
+.modal__window {
+	position: absolute;
+	width: 900px;
+	transition: all 0.4s;
+	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.51);
+	transform: scale(0.1);
+}
+
+.modal-active .modal__window {
+	transform: scale(1);
+}
+
+.modal input,
+button {
+	height: 52px;
+	border-radius: 24px;
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 18px;
+	border: none;
+}
+.modal form {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-bottom: 19px;
+}
+
+.modal input {
+	padding-left: 42px;
+	color: rgba(22, 46, 60, 1);
+	font-weight: 700;
+	width: 368px;
+	background: rgba(255, 255, 255, 1);
+}
+
+.modal button {
+	background: rgba(22, 46, 60, 1);
+	color: rgba(255, 255, 255, 1);
+	font-weight: 700;
+	width: 128px;
+	cursor: pointer;
+}
+
+.close__modal {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.close__modal button {
+	background: none !important;
+	color: black !important;
+	font-size: 30px !important;
+	border: none;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.modal p:nth-of-type(2) {
+	font-size: 16px;
+}
+
+.modal__positiv-message {
+	position: fixed;
+	display: none;
+	z-index: 500;
+	top: 130px;
+	left: -250px;
+	background: rgb(0, 190, 0);
+	width: 250px;
+	height: 100px;
+	padding: 10px;
+	border-radius: 0px 10px 10px 0px;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1.7s;
+}
+.modal__positiv-message p {
+	color: white;
+	font-size: 17px;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.pozitiv-active {
+	z-index: 500;
+	left: 0px;
+}
+
+.pozitiv-active p {
+	transition: all 1.7s;
+	display: block;
+}
+
+@media all and (max-width: 1000px){
+	.modal__window {
+		position: absolute;
+		width: 600px;
+		transition: all 0.4s;
+		box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.51);
+		transform: scale(0.1);
+		border-radius: 10px !important;
+		padding: 30px 10px;
+	}
+
+	.close__modal {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+	}
+
+	.modal__window img{
+		z-index: 0;
+		opacity: 0.5;
+	}
+
+	.modal__window br{
+		display: none;
+	}
+}
+
+@media all and (max-width: 640px){
+	.modal__window {
+		position: absolute;
+		width: 95%;
+		transition: all 0.4s;
+		box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.51);
+		border-radius: 10px;
+		transform: scale(0.1);
+	}
+
+	.modal__window h2{
+		font-size: 30px;
+	}
+
+}
+
+@media all and (max-width: 440px){
+	.modal {
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		transition: all 0.4s;
+	}
+
+	.modal__window {
+		position: absolute;
+		width: 95%;
+		transition: all 0.4s;
+		box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.51);
+		transform: scale(0.1);
+		padding: 20px 10px;
+		border-radius: 10px;
+	}
+	.close__modal {
+		position: absolute;
+		right: 5px;
+		top: 0px;
+	}
+
+	.modal__window h2{
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+
+	.modal form {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 16px;
+		margin-bottom: 19px;
+	}
+
+	.modal button {
+		background: rgba(22, 46, 60, 1);
+		color: rgba(255, 255, 255, 1);
+		font-weight: 700;
+		width: 100%;
+		cursor: pointer;
+	}
+
+	.modal input {
+		width: 100%;
+        
+	}
+}
+
+@media all and (max-width: 400px){
+	.modal__window {
+		position: absolute;
+		width: 95%;
+		transition: all 0.4s;
+		box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.51);
+		transform: scale(0.1);
+		padding: 20px 10px;
+		border-radius: 10px !important;
+	}
+}
+
+@media all and (max-width: 366px){
+	.modal__window {
+		position: absolute;
+		width: 95%;
+		transition: all 0.4s;
+		box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.51);
+		transform: scale(0.1);
+		padding: 20px 10px;
+		border-radius: 10px;
+	}
+
+}
+
