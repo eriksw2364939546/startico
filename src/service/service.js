@@ -1,6 +1,6 @@
 async function sendDataTelegramm(message) {
     try {
-        const response = await fetch("http://localhost:3000/send-message", { // меняй URL на свой сервер
+        const response = await fetch("https://startico.vercel.app//send-message", { 
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ message }),
